@@ -1,0 +1,63 @@
+.aniversario {
+    text-align: center;
+    padding: 200px 20px;
+    display: flex; 
+    justify-content: center;
+
+    h2 {
+        font-size: 72px;
+        margin: 0;
+
+        span {
+            color: #FFC107;
+        }
+    }
+
+    h3 {
+        font-size: 52px;
+        max-width: 600px;
+        margin: 20px auto;
+    }
+
+    button {
+        background-color: #FFC107;
+        border: none;
+        padding: 15px 30px;
+        font-size: 16px;
+        cursor: pointer;
+        margin-top: 20px;
+
+        &:hover {
+            background-color: #FFA000;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        padding: 100px 20px;
+
+        h2 {
+            font-size: 48px;
+        }
+
+        h3 {
+            font-size: 36px;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        padding: 50px 20px;
+
+        h2 {
+            font-size: 36px;
+        }
+
+        h3 {
+            font-size: 24px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 14px;
+        }
+    }
+}

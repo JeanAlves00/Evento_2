@@ -1,0 +1,16 @@
+
+@use 'aniversario';
+@use 'fotos';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url(/src/images/fundo-stardust.png);
+    background-color: #0A1128;
+    color: #fff;
+}

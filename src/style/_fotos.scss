@@ -1,0 +1,38 @@
+.fotos {
+    text-align: center; /* Centraliza as imagens horizontalmente */
+
+    .section-fotos {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px; /* Espaço entre as imagens */
+        justify-content: center; /* Centraliza as imagens verticalmente */
+        max-width: 1200px; /* Largura máxima */
+        margin: 0 auto; /* Centraliza na página */
+        padding: 20px; /* Espaçamento interno */
+
+        .fotos {
+            flex: 1 1 300px; /* Flexbox para responsividade */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para efeito visual */
+            overflow: hidden; /* Evita que imagens grandes quebrem o layout */
+            border-radius: 8px; /* Cantos arredondados */
+
+            img {
+                width: 100%;
+                height: auto;
+                display: block;
+                transition: transform 0.3s ease; /* Efeito de transição suave */
+
+                &:hover {
+                    transform: scale(1.05); /* Zoom suave ao passar o mouse */
+                }
+            }
+        }
+    }
+}
+
+// Media query para tornar as fotos responsivas em telas menores
+@media screen and (max-width: 768px) {
+    .fotos .section-fotos .fotos {
+        flex: 2 2  100%; /* Uma coluna em telas menores */
+    }
+}
